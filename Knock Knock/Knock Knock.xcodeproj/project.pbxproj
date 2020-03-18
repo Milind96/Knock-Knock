@@ -19,6 +19,8 @@
 		A32C12012420C90700C017BE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C12002420C90700C017BE /* Extensions.swift */; };
 		A32C1203242107B400C017BE /* InputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C1202242107B400C017BE /* InputContainerView.swift */; };
 		A32C120524210FB800C017BE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C120424210FB800C017BE /* CustomTextField.swift */; };
+		A32C12072422752B00C017BE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C12062422752B00C017BE /* ViewModel.swift */; };
+		A32C1209242283BF00C017BE /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C1208242283BF00C017BE /* RegistrationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		A32C12002420C90700C017BE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A32C1202242107B400C017BE /* InputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputContainerView.swift; sourceTree = "<group>"; };
 		A32C120424210FB800C017BE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		A32C12062422752B00C017BE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A32C1208242283BF00C017BE /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 		A32C11F52420ACCC00C017BE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A32C120A242283CA00C017BE /* Authentication */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -137,6 +142,15 @@
 			children = (
 				A32C11FC2420C40300C017BE /* LoginController.swift */,
 				A32C11FE2420C42400C017BE /* RegistrationController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		A32C120A242283CA00C017BE /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A32C12062422752B00C017BE /* ViewModel.swift */,
+				A32C1208242283BF00C017BE /* RegistrationViewModel.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -212,6 +226,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A32C12072422752B00C017BE /* ViewModel.swift in Sources */,
+				A32C1209242283BF00C017BE /* RegistrationViewModel.swift in Sources */,
 				A32C11E32420ACB500C017BE /* ViewController.swift in Sources */,
 				A32C1203242107B400C017BE /* InputContainerView.swift in Sources */,
 				A32C11DF2420ACB500C017BE /* AppDelegate.swift in Sources */,
