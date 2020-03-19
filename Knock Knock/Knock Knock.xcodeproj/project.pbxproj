@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E5034E44AF8376FCFF371B1 /* Pods_Knock_Knock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430F4582DC11344E26F0F3AC /* Pods_Knock_Knock.framework */; };
 		A32C11DF2420ACB500C017BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C11DE2420ACB500C017BE /* AppDelegate.swift */; };
 		A32C11E12420ACB500C017BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C11E02420ACB500C017BE /* SceneDelegate.swift */; };
 		A32C11E32420ACB500C017BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C11E22420ACB500C017BE /* ViewController.swift */; };
@@ -21,9 +22,14 @@
 		A32C120524210FB800C017BE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C120424210FB800C017BE /* CustomTextField.swift */; };
 		A32C12072422752B00C017BE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C12062422752B00C017BE /* ViewModel.swift */; };
 		A32C1209242283BF00C017BE /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C1208242283BF00C017BE /* RegistrationViewModel.swift */; };
+		A32C120C242380B000C017BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A32C120B242380AF00C017BE /* GoogleService-Info.plist */; };
+		A3B3F3EF2423AD0600336BBF /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3F3EE2423AD0600336BBF /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		430F4582DC11344E26F0F3AC /* Pods_Knock_Knock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Knock_Knock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F0AE5169A306CCFB8D43A57 /* Pods-Knock Knock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Knock Knock.debug.xcconfig"; path = "Target Support Files/Pods-Knock Knock/Pods-Knock Knock.debug.xcconfig"; sourceTree = "<group>"; };
+		68C3C9A957BE9FB2982F8BE2 /* Pods-Knock Knock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Knock Knock.release.xcconfig"; path = "Target Support Files/Pods-Knock Knock/Pods-Knock Knock.release.xcconfig"; sourceTree = "<group>"; };
 		A32C11DB2420ACB500C017BE /* Knock Knock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Knock Knock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32C11DE2420ACB500C017BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A32C11E02420ACB500C017BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +46,8 @@
 		A32C120424210FB800C017BE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		A32C12062422752B00C017BE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		A32C1208242283BF00C017BE /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		A32C120B242380AF00C017BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3B3F3EE2423AD0600336BBF /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +55,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E5034E44AF8376FCFF371B1 /* Pods_Knock_Knock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		133BC85BDA5AD0F62F2F8C6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F0AE5169A306CCFB8D43A57 /* Pods-Knock Knock.debug.xcconfig */,
+				68C3C9A957BE9FB2982F8BE2 /* Pods-Knock Knock.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A32C11D22420ACB500C017BE = {
 			isa = PBXGroup;
 			children = (
 				A32C11DD2420ACB500C017BE /* Knock Knock */,
 				A32C11DC2420ACB500C017BE /* Products */,
+				133BC85BDA5AD0F62F2F8C6D /* Pods */,
+				A6B6BBFB07067A373C78F1E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +105,7 @@
 				A32C11E72420ACB600C017BE /* Assets.xcassets */,
 				A32C11E92420ACB600C017BE /* LaunchScreen.storyboard */,
 				A32C11EC2420ACB600C017BE /* Info.plist */,
+				A32C120B242380AF00C017BE /* GoogleService-Info.plist */,
 			);
 			path = "Knock Knock";
 			sourceTree = "<group>";
@@ -100,6 +121,7 @@
 		A32C11F32420ACC300C017BE /* API */ = {
 			isa = PBXGroup;
 			children = (
+				A3B3F3EE2423AD0600336BBF /* AuthService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -155,6 +177,14 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		A6B6BBFB07067A373C78F1E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				430F4582DC11344E26F0F3AC /* Pods_Knock_Knock.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A32C11EF2420ACB600C017BE /* Build configuration list for PBXNativeTarget "Knock Knock" */;
 			buildPhases = (
+				BC955A460310E2CC927447F4 /* [CP] Check Pods Manifest.lock */,
 				A32C11D72420ACB500C017BE /* Sources */,
 				A32C11D82420ACB500C017BE /* Frameworks */,
 				A32C11D92420ACB500C017BE /* Resources */,
+				9A43A46DF3645B8F2CBEF613 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,12 +246,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				A32C11EB2420ACB600C017BE /* LaunchScreen.storyboard in Resources */,
+				A32C120C242380B000C017BE /* GoogleService-Info.plist in Resources */,
 				A32C11E82420ACB600C017BE /* Assets.xcassets in Resources */,
 				A32C11E62420ACB500C017BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A43A46DF3645B8F2CBEF613 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Knock Knock/Pods-Knock Knock-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Knock Knock/Pods-Knock Knock-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Knock Knock/Pods-Knock Knock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC955A460310E2CC927447F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Knock Knock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A32C11D72420ACB500C017BE /* Sources */ = {
@@ -229,6 +304,7 @@
 				A32C12072422752B00C017BE /* ViewModel.swift in Sources */,
 				A32C1209242283BF00C017BE /* RegistrationViewModel.swift in Sources */,
 				A32C11E32420ACB500C017BE /* ViewController.swift in Sources */,
+				A3B3F3EF2423AD0600336BBF /* AuthService.swift in Sources */,
 				A32C1203242107B400C017BE /* InputContainerView.swift in Sources */,
 				A32C11DF2420ACB500C017BE /* AppDelegate.swift in Sources */,
 				A32C11FA2420AD7D00C017BE /* ConversationsController.swift in Sources */,
@@ -378,6 +454,7 @@
 		};
 		A32C11F02420ACB600C017BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F0AE5169A306CCFB8D43A57 /* Pods-Knock Knock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +473,7 @@
 		};
 		A32C11F12420ACB600C017BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68C3C9A957BE9FB2982F8BE2 /* Pods-Knock Knock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
