@@ -24,6 +24,10 @@
 		A32C1209242283BF00C017BE /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C1208242283BF00C017BE /* RegistrationViewModel.swift */; };
 		A32C120C242380B000C017BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A32C120B242380AF00C017BE /* GoogleService-Info.plist */; };
 		A3B3F3EF2423AD0600336BBF /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3F3EE2423AD0600336BBF /* AuthService.swift */; };
+		A3B3F3F12423C44500336BBF /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3F3F02423C44500336BBF /* NewMessageController.swift */; };
+		A3B3F3F324250FC300336BBF /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3F3F224250FC300336BBF /* UserCell.swift */; };
+		A3B3F3F52425156000336BBF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3F3F42425156000336BBF /* User.swift */; };
+		A3B3F3F7242515EF00336BBF /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3F3F6242515EF00336BBF /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		A32C1208242283BF00C017BE /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		A32C120B242380AF00C017BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3B3F3EE2423AD0600336BBF /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A3B3F3F02423C44500336BBF /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
+		A3B3F3F224250FC300336BBF /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		A3B3F3F42425156000336BBF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A3B3F3F6242515EF00336BBF /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				A3B3F3EE2423AD0600336BBF /* AuthService.swift */,
+				A3B3F3F6242515EF00336BBF /* Service.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -148,6 +157,7 @@
 			children = (
 				A32C1202242107B400C017BE /* InputContainerView.swift */,
 				A32C120424210FB800C017BE /* CustomTextField.swift */,
+				A3B3F3F224250FC300336BBF /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -155,6 +165,7 @@
 		A32C11F72420ACD100C017BE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A3B3F3F42425156000336BBF /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +175,7 @@
 			children = (
 				A32C11FC2420C40300C017BE /* LoginController.swift */,
 				A32C11FE2420C42400C017BE /* RegistrationController.swift */,
+				A3B3F3F02423C44500336BBF /* NewMessageController.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -307,12 +319,16 @@
 				A3B3F3EF2423AD0600336BBF /* AuthService.swift in Sources */,
 				A32C1203242107B400C017BE /* InputContainerView.swift in Sources */,
 				A32C11DF2420ACB500C017BE /* AppDelegate.swift in Sources */,
+				A3B3F3F324250FC300336BBF /* UserCell.swift in Sources */,
 				A32C11FA2420AD7D00C017BE /* ConversationsController.swift in Sources */,
+				A3B3F3F52425156000336BBF /* User.swift in Sources */,
+				A3B3F3F7242515EF00336BBF /* Service.swift in Sources */,
 				A32C11E12420ACB500C017BE /* SceneDelegate.swift in Sources */,
 				A32C11FF2420C42400C017BE /* RegistrationController.swift in Sources */,
 				A32C11FD2420C40300C017BE /* LoginController.swift in Sources */,
 				A32C12012420C90700C017BE /* Extensions.swift in Sources */,
 				A32C120524210FB800C017BE /* CustomTextField.swift in Sources */,
+				A3B3F3F12423C44500336BBF /* NewMessageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
