@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class UserCell : UITableViewCell {
     
@@ -19,7 +20,7 @@ class UserCell : UITableViewCell {
     private let profileImageView: UIImageView = {
         let iv = UIImageView()
         iv.backgroundColor = .systemBlue
-        iv.contentMode = .scaleAspectFit
+        iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
         return iv
     }()
@@ -47,7 +48,7 @@ class UserCell : UITableViewCell {
         addSubview(profileImageView)
         profileImageView.centerY(inView: self , leftAnchor: leftAnchor, paddingLeft:12)
         profileImageView.setDimensions(height: 56, width: 56)
-        profileImageView.layer.cornerRadius = 64/2
+        profileImageView.layer.cornerRadius = 56/2
         
         let stack = UIStackView(arrangedSubviews: [usernameLabel,fullNameLabel])
         stack.axis = .vertical
@@ -68,6 +69,10 @@ class UserCell : UITableViewCell {
         guard let user = user else { return }
         fullNameLabel.text = user.fullname
         usernameLabel.text = user.username
+        
+        guard let url = URL(string: user.profileImageUrl) else { return }
+        profileImageView.sd_setImage(with: url)
+        
     }
     
 }

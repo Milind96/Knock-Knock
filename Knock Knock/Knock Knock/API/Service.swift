@@ -17,6 +17,8 @@ struct Service {
                
                 let dictionary = document.data()
                 let user = User(dictionary: dictionary)
+                print("DEBUG: \(user.fullname)")
+                print("DEBUG: \(user.profileImageUrl)")
                 users.append(user)
                 completion(users)
             })

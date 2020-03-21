@@ -50,12 +50,12 @@ struct AuthService {
                     
                     let data = ["email" : credentials.email,
                                 "fullname" : credentials.fullName,
-                                "profileimage" : profileImageUrl,
+                                "profileImageUrl" : profileImageUrl,
                                 "uid" : uid,
                                 "username" : credentials.userName] as [String : Any]
                     
                     Firestore.firestore().collection("users").document(uid).setData(data, completion: completion)
-                    
+                    print("DEBUG: \(profileImageUrl)")
                 }
             }
         }
