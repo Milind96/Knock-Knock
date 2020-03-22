@@ -33,6 +33,9 @@
 		A3B3F3FD24261A9400336BBF /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3F3FC24261A9400336BBF /* MessageCell.swift */; };
 		A3B3F3FF24262ADF00336BBF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3F3FE24262ADF00336BBF /* Message.swift */; };
 		A3B3F40124262EC300336BBF /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3F40024262EC300336BBF /* MessageViewModel.swift */; };
+		A3B3F40324279C2E00336BBF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3F40224279C2E00336BBF /* Constants.swift */; };
+		A3B3F4052427C14000336BBF /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3F4042427C14000336BBF /* ConversationCell.swift */; };
+		A3B3F4072427C68000336BBF /* ConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3F4062427C68000336BBF /* ConversationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,9 @@
 		A3B3F3FC24261A9400336BBF /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		A3B3F3FE24262ADF00336BBF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		A3B3F40024262EC300336BBF /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		A3B3F40224279C2E00336BBF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A3B3F4042427C14000336BBF /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		A3B3F4062427C68000336BBF /* ConversationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				A32C12002420C90700C017BE /* Extensions.swift */,
+				A3B3F40224279C2E00336BBF /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -159,6 +166,7 @@
 			children = (
 				A32C120A242283CA00C017BE /* Authentication */,
 				A3B3F40024262EC300336BBF /* MessageViewModel.swift */,
+				A3B3F4062427C68000336BBF /* ConversationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -171,6 +179,7 @@
 				A3B3F3F224250FC300336BBF /* UserCell.swift */,
 				A3B3F3FA24260F8C00336BBF /* CustomInputAccessoryView.swift */,
 				A3B3F3FC24261A9400336BBF /* MessageCell.swift */,
+				A3B3F4042427C14000336BBF /* ConversationCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -329,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A32C12072422752B00C017BE /* ViewModel.swift in Sources */,
+				A3B3F40324279C2E00336BBF /* Constants.swift in Sources */,
 				A32C1209242283BF00C017BE /* RegistrationViewModel.swift in Sources */,
 				A32C11E32420ACB500C017BE /* ViewController.swift in Sources */,
 				A3B3F3EF2423AD0600336BBF /* AuthService.swift in Sources */,
@@ -340,12 +350,14 @@
 				A3B3F3F52425156000336BBF /* User.swift in Sources */,
 				A3B3F3F7242515EF00336BBF /* Service.swift in Sources */,
 				A3B3F3FD24261A9400336BBF /* MessageCell.swift in Sources */,
+				A3B3F4072427C68000336BBF /* ConversationViewModel.swift in Sources */,
 				A32C11E12420ACB500C017BE /* SceneDelegate.swift in Sources */,
 				A32C11FF2420C42400C017BE /* RegistrationController.swift in Sources */,
 				A32C11FD2420C40300C017BE /* LoginController.swift in Sources */,
 				A32C12012420C90700C017BE /* Extensions.swift in Sources */,
 				A3B3F3F92425E28800336BBF /* ChatController.swift in Sources */,
 				A32C120524210FB800C017BE /* CustomTextField.swift in Sources */,
+				A3B3F4052427C14000336BBF /* ConversationCell.swift in Sources */,
 				A3B3F3FF24262ADF00336BBF /* Message.swift in Sources */,
 				A3B3F3F12423C44500336BBF /* NewMessageController.swift in Sources */,
 				A3B3F3FB24260F8C00336BBF /* CustomInputAccessoryView.swift in Sources */,

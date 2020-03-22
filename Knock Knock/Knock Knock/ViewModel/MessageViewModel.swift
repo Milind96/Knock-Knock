@@ -13,7 +13,7 @@ struct MesssageViewModel {
     private let message: Message
     
     var messageBackgroundColor : UIColor {
-        return message.isFromCurrentUSer ? #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0) : .systemPurple
+        return message.isFromCurrentUSer ? #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1) : .systemPurple
     }
     
     var messageTextColor: UIColor {
@@ -32,9 +32,10 @@ struct MesssageViewModel {
         return message.isFromCurrentUSer
     }
     
-//    var profileImageUrl: URL? {
-//       return()
-//    }
+    var profileImageUrl: URL? {
+        guard let user = message.user else { return nil }
+        return URL(string: user.profileImageUrl)
+    }
     
     init(message: Message) {
         self.message = message
