@@ -30,6 +30,7 @@ struct Service {
         COLLECTION_USERS.document(uid).getDocument { (snapshot, error) in
             guard let dictionary = snapshot?.data() else { return }
             let user = User(dictionary: dictionary)
+            print("DEBUG: \(user.profileImageUrl)")
             completion(user)
         }
     }

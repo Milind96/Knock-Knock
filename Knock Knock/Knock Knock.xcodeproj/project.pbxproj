@@ -36,6 +36,11 @@
 		A3B3F40324279C2E00336BBF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3F40224279C2E00336BBF /* Constants.swift */; };
 		A3B3F4052427C14000336BBF /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3F4042427C14000336BBF /* ConversationCell.swift */; };
 		A3B3F4072427C68000336BBF /* ConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3F4062427C68000336BBF /* ConversationViewModel.swift */; };
+		A3B3F4092428D71E00336BBF /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3F4082428D71E00336BBF /* ProfileController.swift */; };
+		A3B3F40B2428D87D00336BBF /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3F40A2428D87D00336BBF /* ProfileHeader.swift */; };
+		A3B3F40D2428FE0F00336BBF /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3F40C2428FE0F00336BBF /* ProfileViewModel.swift */; };
+		A3B3F40F2429005C00336BBF /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3F40E2429005C00336BBF /* ProfileCell.swift */; };
+		A3B3F41124290C9400336BBF /* ProfileFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3F41024290C9400336BBF /* ProfileFooter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +77,11 @@
 		A3B3F40224279C2E00336BBF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A3B3F4042427C14000336BBF /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
 		A3B3F4062427C68000336BBF /* ConversationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewModel.swift; sourceTree = "<group>"; };
+		A3B3F4082428D71E00336BBF /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		A3B3F40A2428D87D00336BBF /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		A3B3F40C2428FE0F00336BBF /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		A3B3F40E2429005C00336BBF /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		A3B3F41024290C9400336BBF /* ProfileFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFooter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +190,9 @@
 				A3B3F3FA24260F8C00336BBF /* CustomInputAccessoryView.swift */,
 				A3B3F3FC24261A9400336BBF /* MessageCell.swift */,
 				A3B3F4042427C14000336BBF /* ConversationCell.swift */,
+				A3B3F40A2428D87D00336BBF /* ProfileHeader.swift */,
+				A3B3F40E2429005C00336BBF /* ProfileCell.swift */,
+				A3B3F41024290C9400336BBF /* ProfileFooter.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,6 +213,7 @@
 				A32C11FE2420C42400C017BE /* RegistrationController.swift */,
 				A3B3F3F02423C44500336BBF /* NewMessageController.swift */,
 				A3B3F3F82425E28800336BBF /* ChatController.swift */,
+				A3B3F4082428D71E00336BBF /* ProfileController.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -209,6 +223,7 @@
 			children = (
 				A32C12062422752B00C017BE /* ViewModel.swift */,
 				A32C1208242283BF00C017BE /* RegistrationViewModel.swift */,
+				A3B3F40C2428FE0F00336BBF /* ProfileViewModel.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -337,23 +352,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3B3F4092428D71E00336BBF /* ProfileController.swift in Sources */,
 				A32C12072422752B00C017BE /* ViewModel.swift in Sources */,
 				A3B3F40324279C2E00336BBF /* Constants.swift in Sources */,
+				A3B3F40D2428FE0F00336BBF /* ProfileViewModel.swift in Sources */,
 				A32C1209242283BF00C017BE /* RegistrationViewModel.swift in Sources */,
 				A32C11E32420ACB500C017BE /* ViewController.swift in Sources */,
 				A3B3F3EF2423AD0600336BBF /* AuthService.swift in Sources */,
 				A3B3F40124262EC300336BBF /* MessageViewModel.swift in Sources */,
+				A3B3F41124290C9400336BBF /* ProfileFooter.swift in Sources */,
 				A32C1203242107B400C017BE /* InputContainerView.swift in Sources */,
 				A32C11DF2420ACB500C017BE /* AppDelegate.swift in Sources */,
 				A3B3F3F324250FC300336BBF /* UserCell.swift in Sources */,
 				A32C11FA2420AD7D00C017BE /* ConversationsController.swift in Sources */,
 				A3B3F3F52425156000336BBF /* User.swift in Sources */,
+				A3B3F40F2429005C00336BBF /* ProfileCell.swift in Sources */,
 				A3B3F3F7242515EF00336BBF /* Service.swift in Sources */,
 				A3B3F3FD24261A9400336BBF /* MessageCell.swift in Sources */,
 				A3B3F4072427C68000336BBF /* ConversationViewModel.swift in Sources */,
 				A32C11E12420ACB500C017BE /* SceneDelegate.swift in Sources */,
 				A32C11FF2420C42400C017BE /* RegistrationController.swift in Sources */,
 				A32C11FD2420C40300C017BE /* LoginController.swift in Sources */,
+				A3B3F40B2428D87D00336BBF /* ProfileHeader.swift in Sources */,
 				A32C12012420C90700C017BE /* Extensions.swift in Sources */,
 				A3B3F3F92425E28800336BBF /* ChatController.swift in Sources */,
 				A32C120524210FB800C017BE /* CustomTextField.swift in Sources */,
