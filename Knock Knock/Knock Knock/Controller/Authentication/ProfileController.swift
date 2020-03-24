@@ -104,9 +104,9 @@ extension ProfileController {
         
         switch viewModel {
         case .accountInfo:
-            print("Dummy Account Info")
+            showError("Dummy Account Info.")
         case .settings:
-            print("Dummy Settings")
+            showError("Dummy Settings.")
         }
     }
     
